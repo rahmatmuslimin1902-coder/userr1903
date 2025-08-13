@@ -1,0 +1,2 @@
+<!-- HAMPIR SAMA, BEDANYA DI BAGIAN AUDIO: -->
+<audio id="bgm" src="musik.mp3" preload="auto" loop playsinline></audio>
