@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inner Child</title>
+<style>
+    body {
+        background-color: #111;
+        color: white;
+        font-family: 'Segoe UI', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        padding: 20px;
+    }
+    #text {
+        display: none;
+        opacity: 0;
+        max-width: 700px;
+        line-height: 1.6;
+        white-space: pre-line;
+        transition: opacity 2s ease;
+    }
+    #playBtn {
+        background: #ff4b4b;
+        color: white;
+        padding: 15px 25px;
+        font-size: 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    #playBtn:hover {
+        background: #ff6b6b;
+    }
+</style>
+</head>
+<body>
+
+<audio id="bgm" loop>
+    <source src="https://docs.google.com/uc?export=download&id=1B0m_NQPCETVv_p8ppNKOwcTeDvsMgm7G" type="audio/mpeg">
+</audio>
+
+<button id="playBtn">Putar Musik</button>
+<div id="text">
+Pernah gak…
+baru dikritik dikit aja, langsung ngerasa gagal?
+
+Atau…
+ada orang bilang “biasa aja kok”, tapi di hati rasanya kayak diserang?
+Kayak ada pintu lama yang kebuka…
+dan di baliknya ada kenangan yang gak pengen kamu lihat lagi.
+
+Mungkin ini bukan soal hari ini.
+Mungkin ini… soal luka lama.
+Luka yang gak pernah benar2 sembuh.
+
+Waktu kecil…
+mungkin kamu sering dimarahin cuma gara2 nangis.
+Dibilang cengeng, disuruh berhenti,
+padahal hatimu cuma lagi nyari tempat aman.
+
+Atau dibentak hanya karena nanya hal sederhana,
+sampe kamu mikir,
+
+> “Mungkin aku harus diem biar gak dimarahin.”
+
+Atau dibanding2in sama orang lain,
+sampe kamu percaya kalau kasih sayang itu harus diperjuangin pake kesempurnaan.
+
+Akhirnya…
+kamu tumbuh dengan rasa waspada yang gak pernah pergi.
+Setiap kata harus dipikir ulang.
+Setiap gerak harus hati2.
+Takut bikin salah, takut bikin kecewa, takut bikin marah.
+
+> “Aku harus hati2.”
+“Aku harus jadi anak baik biar tdk disalahin.”
+“Kalau aku salah, semua orang bakal marah.”
+
+Dan sekarang…
+tiap ada orang yang kritik kamu,
+yang sebenernya cuma ngomong hal kecil,
+hatimu langsung panas dingin.
+
+Karena yang kamu denger,
+bukan cuma kata2 mereka,
+tapi juga gema suara dari masa lalu…
+suara yang pernah bikin kamu merasa kecil,
+takut, gak berdaya, dan pengen ngilang.
+
+Itu lah yang orang sebut inner child.
+Bagian kecil dalam dirimu…
+yang dulu pernah terluka,
+pernah ketakutan,
+dan sampai sekarang masih nyimpen harapan untuk dimengerti.
+
+Inner child itu gak butuh kamu usir.
+Gak butuh kamu diamkan.
+Dia cuma butuh kamu peluk,
+kamu tenangin,
+dan kamu bisikin pelan:
+“Sekarang aku di sini. Kamu aman.”
+
+Gak cuma kita yang punya inner child.
+Orang lain juga punya.
+Kadang, kamu ketemu seseorang yang gampang tersinggung,
+gampang merasa diserang,
+atau reaksinya keliatan berlebihan.
+
+Jangan buru2 ngecap dia baperan.
+Jangan langsung ngehakimin dia “terlalu sensitif”.
+
+Kamu gak tau apa yang pernah dia lewati.
+Mungkin, sebelum kamu kenal dia,
+dia udah melewati ratusan malam di mana dia ngerasa sendirian.
+Mungkin, kata2 kecil yang kamu ucapin,
+bisa nyentuh luka yang dia simpan sejak lama.
+
+Kalo kamu nemuin itu…
+jangan tambahin lukanya.
+Jangan ikut nyakitin hatinya.
+Dengerin dia.
+Sabar sama emosinya.
+Kadang… perhatian kecil dari kita,
+senyum tulus, atau sekadar “nggak apa2, aku ngerti kok”,
+bisa jadi obat yang dia cari seumur hidup.
+
+Karena di balik sikap yang kadang susah dimengerti,
+ada hati kecil yang cuma pengen ngerasa aman…
+dan kalau kita mau sedikit lebih lembut,
+mungkin… kita bisa jadi alasan dia percaya lagi sama kebaikan.
+</div>
+
+<script>
+document.getElementById("playBtn").addEventListener("click", function(){
+    let audio = document.getElementById("bgm");
+    audio.play();
+    this.style.display = "none";
+    let text = document.getElementById("text");
+    text.style.display = "block";
+    setTimeout(()=> text.style.opacity = 1, 100);
+});
+</script>
+
+</body>
+</html>
